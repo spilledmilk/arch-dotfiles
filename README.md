@@ -22,6 +22,7 @@ Goodies you will need:
 Directories:
 
 * `$HOME/builds` - For AUR packages and repository clones
+* `$HOME/workspace` - For development projects
 * Dotfiles should be in the `$HOME` directory
 
 ---
