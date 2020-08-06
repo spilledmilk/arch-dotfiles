@@ -21,8 +21,8 @@ Goodies you will need:
 
 Directories:
 
-* $HOME/builds - For AUR packages and repository clones
-* Dotfiles should be in the $HOME directory
+* `$HOME/builds` - For AUR packages and repository clones
+* Dotfiles should be in the `$HOME` directory
 
 ---
 
@@ -53,7 +53,7 @@ Check out the link to romkatv's repository to set things up, or follow the simpl
 
 1. Install the Meslo Nerd Font, either from the linked "Nerd Fonts" site or [here from romkatv's repository](https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k)
 
-2. Clone the repository in the $HOME/builds folder
+2. Clone the repository in the `$HOME/builds` folder
     
         git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
         
@@ -89,7 +89,7 @@ Change the `muse.zsh-theme` to the one of your choice.
 
 ### Add zsh-syntax-highlighting
 
-1. Clone the repository in the $HOME/builds folder
+1. Clone the repository in the `$HOME/builds` folder
 
         git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 
