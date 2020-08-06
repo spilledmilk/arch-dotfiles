@@ -8,15 +8,17 @@
 
 # ls
 alias ls='ls -G --color=auto'
-alias ll='ls -al --color=auto'
-alias la='ls -A --color=auto'
+alias ll='ls -l --color=auto'
+alias la='ls -la'
 
 # Dot
-alias dot='cd ~/arch-dotfiles'
-alias vpa='vim ~/arch-dotfiles/.bash_aliases'
-alias vpwa='vim ~/arch-dotfiles/.bash_work_aliases'
+alias va='vim ~/arch-dotfiles/.bash_aliases'
 alias vz='vim ~/arch-dotfiles/.zshrc'
 alias vb='vim ~/arch-dotfiles/.bash_profile'
+
+# Directory
+alias dot='cd ~/arch-dotfiles'
+alias dev='cd ~/workspace'
 
 # Editor
 alias v='vim'
