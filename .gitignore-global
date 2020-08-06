@@ -1,0 +1,14 @@
+# .gitignore - Jane Kim
+# https://spilledmilk.github.io
+
+.DS_Store
+.#*
+.idea/*
+.svn
+*~
+tags
+log/
+db/*.sqlite3
+.netrwhist
+project-notes.txt
+node_modules/*

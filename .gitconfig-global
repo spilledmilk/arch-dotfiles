@@ -1,0 +1,36 @@
+# .gitconfig - Jane Kim
+# https://spilledmilk.github.io
+
+[color]
+  ui=true
+  diff = auto
+  status = auto
+  branch = auto
+
+[color "diff"]
+  meta = yellow 
+
+[core]
+  excludesfile = ~/.gitignore
+  editor = vim --noplugin
+
+[apply]
+  whitespace = nowarn
+
+[help]
+  autocorrect = 1
+
+[branch]
+  autosetupmerge = true
+  autosetuprebase = always
+
+[push]
+  default = current
+
+[merge]
+  ff = only
+  tool = opendiff
+  conflictstyle = diff3
+
+[include]
+  path = ~/.gitconfig_local

@@ -1,0 +1,21 @@
+# .shenv - Jane Kim
+# https://spilledmilk.github.io
+
+# History lines
+HISTSIZE=1000
+HISTFILESIZE=1000
+
+# Use full colour
+export TERM=xterm
+
+# Syntax highlighting
+export HIGHLIGHT_CMD="emacs --batch -l ~/.local/share/highlight.el --theme base16-tomorrow-night 2> /dev/null"
+export "LESSOPEN=|$HIGHLIGHT_CMD %s"
+export "LESS=-R"
+
+# Default editors
+export EDITOR='vim'
+export VISUAL='emacs'
+
+# Local binaries
+export PATH=~/.local/bin:$PATH

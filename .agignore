@@ -1,0 +1,10 @@
+# .agignore - Jane Kim
+# https://spilledmilk.github.io
+
+log
+vendor
+tmp
+doc
+coverage
+public/assets
+*.sql
