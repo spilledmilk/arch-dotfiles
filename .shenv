@@ -1,6 +1,3 @@
-# .shenv - Jane Kim
-# https://spilledmilk.github.io
-
 # History lines
 HISTSIZE=1000
 HISTFILESIZE=1000

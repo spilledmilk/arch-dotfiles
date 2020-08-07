@@ -40,6 +40,10 @@ alias sz='source ~/arch-dotfiles/.zshrc'
 # Linux
 alias enw='sudo systemctl enable NetworkManager.service'
 alias sbt='sudo systemctl start bluetooth.service'
+alias remove='sudo pacman -Rns'
+alias install='sudo pacman -S'
+alias update='sudo pacman -Syu'
+alias make='makepkg -sic'
 
 # School
 alias uiscad='ssh jlund6@uisacad5.uis.edu'

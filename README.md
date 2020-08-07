@@ -114,5 +114,59 @@ The zsh-syntax-highlighting default highlighters should now be active, as the `Z
 ### Themes
 * If you ever want to modify an existing theme, add the modified file (different name than the original) to the `.zsh-custom/themes` folder. Then source that `.zsh-theme` file in .zshrc to apply the theme.
 
+### Terminal
+
+***Note:** You may need to configure your terminal preferences to run `source ~/arch-dotfiles/.zshrc` when the application starts.*
+
+* [Tilda](https://github.com/lanoxx/tilda/) - Terminal emulator, such as Konsole
+* [Colour palette ideas](https://github.com/lysyi3m/macos-terminal-themes)
+
+![*Japanesque* colour palette](https://raw.githubusercontent.com/lysyi3m/macos-terminal-themes/master/screenshots/japanesque.png)
+
+### Privacy & Security
+* [Restore Privacy](https://restoreprivacy.com/)
+* [Firefox privacy modification guide](https://restoreprivacy.com/firefox-privacy/)
+
+### Preferred Software
+| Type              | Program            |
+| :----------       | :-----------       |
+| Browser           | Firefox, Brave     |
+| Terminal          | Tilda              |
+| Terminal Editor   | Vim                |
+| File Manager      | Dolphin            |
+| Password Manager  | KeePassXC          |
+| Code Editor       | VS Code, Jetbrains |
+| Music Player      | Sayonara           |
+| Pixel Art         | Aseprite           |
+| Chat              | Element (Riot)     |
+| Cloud Storage     | pCloud             |
+| VPN Client        | ProtonVPN          |
+| Screenshot        | Shutter, Lookit    |
+| YT Download       | youtube-dl-git     |
+
+[Official Arch Packages](https://www.archlinux.org/packages/)
+
+* To install:
+
+        sudo pacman -S [package_name]
+
+* Updates when updating the system:
+
+        sudo pacman -Syu
+
+[Arch User Repository](https://aur.archlinux.org/packages/)
+
+* To install:
+
+        git clone [git-clone-url]
+        cd [clone-directory]
+        makepkg -sic
+
+* To update:
+        
+        cd [clone-directory]
+        git pull
+        makepkg -sic
+
 ### To Check Out Later
 * [Spacemacs](https://www.spacemacs.org/doc/DOCUMENTATION.html)

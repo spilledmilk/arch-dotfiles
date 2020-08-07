@@ -1,6 +1,3 @@
-# .bashrc - Jane Kim
-# https://spilledmilk.github.io
-
 # No history duplicates and forget commands prefixed by spaces
 HISTCONTROL=ignoredups:ignorespace
 
