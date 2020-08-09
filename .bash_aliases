@@ -37,6 +37,9 @@ alias sa='source ~/arch-dotfiles/.bash_aliases'
 alias sb='source ~/arch-dotfiles/.bash_profile'
 alias sz='source ~/arch-dotfiles/.zshrc'
 
+# Vim
+alias cv='cp ~/arch-dotfiles/.vimrc ~/.vimrc'
+
 # Linux
 alias enw='sudo systemctl enable NetworkManager.service'
 alias sbt='sudo systemctl start bluetooth.service'
