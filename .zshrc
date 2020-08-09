@@ -1,4 +1,3 @@
-
 # .zshrc - Jane Kim
 # https://spilledmilk.github.io
 
@@ -11,7 +10,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # Source theme
-source ~/powerlevel10k/powerlevel10k.zsh-theme
+source ~/builds/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 # To update, run `git -C ~/powerlevel10k pull`, then restart Zsh;
@@ -83,5 +82,3 @@ function rkey {
         echo "rkey takes one argument: rkey [user]@[host]"
     fi
 }
-
-
