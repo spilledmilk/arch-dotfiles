@@ -123,6 +123,19 @@ The zsh-syntax-highlighting default highlighters should now be active, as the `Z
 
 ![*Japanesque* colour palette](https://raw.githubusercontent.com/lysyi3m/macos-terminal-themes/master/screenshots/japanesque.png)
 
+### Vim
+* [NERDTree](https://github.com/preservim/nerdtree)
+
+        sudo pacman -S vim-nerdtree
+        cp ~/arch-dotfiles/.vimrc ~/.vimrc
+
+* [vim-plug](https://github.com/junegunn/vim-plug/) - Manage Vim plugins
+
+**Cheatsheets**
+Many thanks to [theicfire](https://github.com/theicfire/vimsheet) for these cheatsheets.
+* [General](https://github.com/theicfire/vimsheet/blob/gh-pages/index.md)
+* [Advanced](https://github.com/theicfire/vimsheet/blob/gh-pages/advanced.md)
+
 ### Privacy & Security
 * [Restore Privacy](https://restoreprivacy.com/)
 * [Firefox privacy modification guide](https://restoreprivacy.com/firefox-privacy/)
