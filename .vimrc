@@ -83,3 +83,25 @@ call NERDTreeHighlightFile('css', 'cyan', 'none', 'cyan', '#151515')
 call NERDTreeHighlightFile('coffee', 'Red', 'none', 'red', '#151515')
 call NERDTreeHighlightFile('js', 'Red', 'none', '#ffa500', '#151515')
 call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')
+
+
+"****************************
+"----------vim-plug----------
+"****************************
+"make sure to use single-quotes
+"list plugins with Plug command;
+"put between #begin and #end
+"any valid git url allowed
+
+"automatic installation
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+"begin plugins section
+call plug#begin('~/arch-dotfiles/.vim/plugged')
+
+"initialise plugin system
+call plug#end()
