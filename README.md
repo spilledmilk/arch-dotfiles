@@ -114,6 +114,21 @@ The zsh-syntax-highlighting default highlighters should now be active, as the `Z
 ### Themes
 * If you ever want to modify an existing theme, add the modified file (different name than the original) to the `.zsh-custom/themes` folder. Then source that `.zsh-theme` file in .zshrc to apply the theme.
 
+### Sublime
+* Clone the repository in the `$HOME/builds` folder and install
+
+        git clone https://aur.archlinux.org/sublime-text-dev.github
+        cd [clone directory]
+        makepkg -sic
+
+* Open up Sublime and install Package Control: `Tools` > `Install Package Control...`
+
+* Install packages listed in the *package-list.txt* file
+
+* Copy *Preferences.sublime-settings* content into the Sublime User file with the same name (alias shown below)
+
+        sublime-pref-dts
+
 ### Terminal
 
 ***Note:** You may need to configure your terminal preferences to run `source ~/arch-dotfiles/.zshrc` when the application starts.*
@@ -132,6 +147,7 @@ The zsh-syntax-highlighting default highlighters should now be active, as the `Z
 * [vim-plug](https://github.com/junegunn/vim-plug/) - Manage Vim plugins
 
 **Cheatsheets**
+
 Many thanks to [theicfire](https://github.com/theicfire/vimsheet) for these cheatsheets.
 * [General](https://github.com/theicfire/vimsheet/blob/gh-pages/index.md)
 * [Advanced](https://github.com/theicfire/vimsheet/blob/gh-pages/advanced.md)
@@ -141,21 +157,22 @@ Many thanks to [theicfire](https://github.com/theicfire/vimsheet) for these chea
 * [Firefox privacy modification guide](https://restoreprivacy.com/firefox-privacy/)
 
 ### Preferred Software
-| Type              | Program            |
-| :----------       | :-----------       |
-| Browser           | Firefox, Brave     |
-| Terminal          | Tilda              |
-| Terminal Editor   | Vim                |
-| File Manager      | Dolphin            |
-| Password Manager  | KeePassXC          |
-| Code Editor       | VS Code, Jetbrains |
-| Music Player      | Sayonara           |
-| Pixel Art         | Aseprite           |
-| Chat              | Element (Riot)     |
-| Cloud Storage     | pCloud             |
-| VPN Client        | ProtonVPN          |
-| Screenshot        | Shutter, Lookit    |
-| YT Download       | youtube-dl-git     |
+| Type              | Program               |
+| :----------       | :-----------          |
+| Browser           | Firefox, Brave        |
+| Terminal          | Tilda, Konsole        |
+| Terminal Editor   | Vim                   |
+| File Manager      | Dolphin               |
+| Password Manager  | KeePassXC             |
+| Code Editor       | Sublime Text, VS Code |
+| Music Player      | Sayonara              |
+| Pixel Art         | Aseprite              |
+| Chat              | Element (Riot)        |
+| Cloud Storage     | pCloud                |
+| VPN Client        | NordVPN               |
+| File Protection   | NordLocker            |
+| Screenshot        | Spectacle             |
+| YT Download       | youtube-dl-git        |
 
 [Official Arch Packages](https://www.archlinux.org/packages/)
 
