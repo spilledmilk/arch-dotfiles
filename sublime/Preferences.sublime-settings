@@ -1,0 +1,12 @@
+{
+	"color_scheme": "Packages/Agila Theme/Markdown/Dracula Markdown.tmTheme",
+	"dictionary": "Packages/Language - English/en_GB.dic",
+	"drag_text": false,
+	"font_face": "Fira Code Retina",
+	"font_size": 12,
+	"ignored_packages":
+	[
+	],
+	"tab_size": 1,
+	"theme": "Agila Dracula.sublime-theme"
+}
