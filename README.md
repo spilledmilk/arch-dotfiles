@@ -129,6 +129,8 @@ The zsh-syntax-highlighting default highlighters should now be active, as the `Z
 
         sublime-pref-dts
 
+[Sublime Text Package Control package search page](https://packagecontrol.io/)
+
 ### Terminal
 
 ***Note:** You may need to configure your terminal preferences to run `source ~/arch-dotfiles/.zshrc` when the application starts.*
