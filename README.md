@@ -102,6 +102,82 @@ The zsh-syntax-highlighting default highlighters should now be active, as the `Z
 
 ---
 
+## KDE Plasma Aesthetics & Settings
+
+### Appearance
+* **Global Theme**: Dracula
+* **Plasma Style**: Dracula-kde
+* **Application Style**: MS Windows 9x
+* **Window Decorations**: Gently
+* **Colors**: Dracula
+    
+    * Selection Background: #693f99
+    * Link Text: #00ffb7
+
+* **Fonts**: Ubuntu 12pt, Roboto Mono Medium 12pt
+* **Icons**: Papirus-Dark
+* **Emoticons**: Onigiri
+* **Cursors**: Qogir Cursors - White
+
+### Workspace
+* **Login Screen (SDDM)**: Dracula
+* **Splash Screen**: QuarksSpashDarker
+
+### Hardware
+* **Keyboard**: "Advanced" > "Configure keyboard options"
+
+    * Caps Lock behavior => Make Caps Lock an additional Esc
+    * Ctrl position => Swap Left Alt with Left Ctrl
+
+### Task Manager Settings
+* **Appearance**
+
+    * Highlight windows when hovering over tasks
+    * Mark applications that play audio
+    * Maximum rows: 1
+
+* **Behavior**
+
+    * Group: By program name, Combine into single button
+    * Sort: Alphabetically
+    * On middle-click: None
+    * Show only tasks: From current desktop, From current activity
+
+* **Window Management**
+
+    * Task Switcher
+
+        * Show selected window
+        * Large Icons
+        * Shortcuts - All windows: Ctrl+Tab (Forward), Ctrl+Shift+Tab (Reverse)
+        * Shortcuts - Current application: Alt+\` (Forward), Alt+Shift+\` (Reverse)
+
+---
+
+## System Settings
+
+### Network
+Network Manager is a useful GUI for selecting networks to connect to.
+
+To enable the Network Manager once:
+
+        sudo systemctl start NetworkManager.service
+
+To enable the Network Manager at boot:
+
+        sudo systemctl enable NetworkManager.service
+
+### Bluetooth
+If Bluetooth is not enabled, you can do so with the following command (start at boot):
+
+        sudo systemctl enable Bluetooth.service
+
+To start once, immediately:
+
+        sudo systemctl start Bluetooth.service
+
+---
+
 ## Other Useful Notes
 
 ### Git: Generating SSH Keys
@@ -174,6 +250,7 @@ Many thanks to [theicfire](https://github.com/theicfire/vimsheet) for these chea
 | VPN Client        | NordVPN               |
 | File Protection   | NordLocker            |
 | Screenshot        | Spectacle             |
+| Converter: .deb   | debtap                |
 | YT Download       | youtube-dl-git        |
 
 [Official Arch Packages](https://www.archlinux.org/packages/)
