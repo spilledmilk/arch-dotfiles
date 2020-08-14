@@ -121,7 +121,7 @@ The zsh-syntax-highlighting default highlighters should now be active, as the `Z
 
 ### Workspace
 * **Login Screen (SDDM)**: Dracula
-* **Splash Screen**: QuarksSpashDarker
+* **Splash Screen**: QuarksSplashDarker
 
 ### Hardware
 * **Keyboard**: "Advanced" > "Configure keyboard options"
