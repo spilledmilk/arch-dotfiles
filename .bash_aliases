@@ -58,6 +58,7 @@ alias sublime-pkg-std='cp ~/.config/sublime-text-3/Packages/User/Package\ Contro
 
 # Youtube DL
 alias ytdl='youtube-dl --no-cache-dir --extract-audio --audio-format mp3' #youtube link
+alias ytdl-u='sudo -H pip install --upgrade youtube-dl'
 
 
 #####################################################################
