@@ -233,6 +233,7 @@ Many thanks to [theicfire](https://github.com/theicfire/vimsheet) for these chea
 ### Privacy & Security
 * [Restore Privacy](https://restoreprivacy.com/)
 * [Firefox privacy modification guide](https://restoreprivacy.com/firefox-privacy/)
+* [NordVPN - Arch Wiki](https://wiki.archlinux.org/index.php/NordVPN)
 
 ### Preferred Software
 | Type              | Program               |
