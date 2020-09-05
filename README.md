@@ -56,7 +56,7 @@ Check out the link to romkatv's repository to set things up, or follow the simpl
 
 2. Clone the repository in the `$HOME/builds` folder
     
-        git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+        git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/builds/powerlevel10k
         
         echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>! ~/arch-dotfiles/.zshrc
 
