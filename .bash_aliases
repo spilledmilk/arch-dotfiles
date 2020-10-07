@@ -51,6 +51,12 @@ alias make='makepkg -sic'
 # School
 alias uiscad='ssh jlund6@uisacad5.uis.edu'
 
+function ja {
+  filename=$@
+  javac $filename.java &&
+    java $filename
+ }
+
 # Sublime Text
 alias sublime-pref-dts='cp ~/arch-dotfiles/sublime/Preferences.sublime-settings ~/.config/sublime-text-3/Packages/User/Preferences.sublime-settings'
 alias sublime-pref-std='cp ~/.config/sublime-text-3/Packages/User/Preferences.sublime-settings ~/arch-dotfiles/sublime/Preferences.sublime-settings'
@@ -108,13 +114,14 @@ alias actl='sudo apachectl start'
 # Codebase
 alias acuity='cd ~/workspace/acuity'
 alias ac-start='~/workspace/acuity/docker/development.sh -a start'
-alias ac-restart='$HOME/workspace/acuity/docker/development.sh -a restart'
-alias ac-gulp='$HOME/workspace/acuity/docker/development.sh -a gulp-watch'
-alias ac-logs='./docker/development.sh -a logs -f acuity-web'
-alias ad-status='./docker/development.sh -a status'
-alias ad-stop='./docker/development.sh -a stop'
-alias ad-start='./docker/development.sh -a start'
-alias ad-migrate='./docker/development.sh -a migrate'
+alias ac-restart='~/workspace/acuity/docker/development.sh -a restart'
+alias ac-gulp='~/workspace/acuity/docker/development.sh -a gulp-watch'
+alias ac-logs='~/workspace/acuity/docker/development.sh -a logs -f acuity-web'
+alias ad-status='~/workspace/acuity/docker/development.sh -a status'
+alias ad-stop='~/workspace/acuity/docker/development.sh -a stop'
+alias ad-start='~/workspace/acuity/docker/development.sh -a start'
+alias ad-migrate='~/workspace/acuity/docker/development.sh -a migrate'
+alias csp-build='~/workspace/acuity/docker/development.sh -a build'
 
 # Functional testing
 alias ac-api="./docker/development.sh -a test -t test-api -p '-g /me'"

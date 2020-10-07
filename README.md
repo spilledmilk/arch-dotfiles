@@ -170,11 +170,11 @@ To enable the Network Manager at boot:
 ### Bluetooth
 If Bluetooth is not enabled, you can do so with the following command (start at boot):
 
-        sudo systemctl enable Bluetooth.service
+        sudo systemctl enable bluetooth.service
 
 To start once, immediately:
 
-        sudo systemctl start Bluetooth.service
+        sudo systemctl start bluetooth.service
 
 ### Printers
         
