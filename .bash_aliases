@@ -58,6 +58,7 @@ function ja {
  }
 
 # Sublime Text
+alias edit='subl'
 alias sublime-pref-dts='cp ~/arch-dotfiles/sublime/Preferences.sublime-settings ~/.config/sublime-text-3/Packages/User/Preferences.sublime-settings'
 alias sublime-pref-std='cp ~/.config/sublime-text-3/Packages/User/Preferences.sublime-settings ~/arch-dotfiles/sublime/Preferences.sublime-settings'
 alias sublime-pkg-std='cp ~/.config/sublime-text-3/Packages/User/Package\ Control.sublime-settings ~/arch-dotfiles/sublime/packages-list.txt'
