@@ -50,6 +50,7 @@ alias make='makepkg -sic'
 
 # School
 alias uiscad='ssh jlund6@uisacad5.uis.edu'
+alias uisvpn='sudo openconnect https://vpn.uis.edu'
 
 function ja {
   filename=$@
