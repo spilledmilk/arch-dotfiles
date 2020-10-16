@@ -102,6 +102,54 @@ endif
 
 "begin plugins section
 call plug#begin('~/arch-dotfiles/.vim/plugged')
+Plug 'vim-vdebug/vdebug'
+Plug 'edkolev/promptline.vim'
+Plug 'hail2u/vim-css3-syntax'
+Plug 'othree/html5.vim'
+Plug 'kien/ctrlp.vim'
+Plug 'tpope/vim-surround'
+Plug 'mhinz/vim-startify'
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+Plug 'Raimondi/delimitMate'
+Plug 'majutsushi/tagbar'
+Plug 'mbbill/undotree', { 'on' : 'UndotreeToggle'}
+Plug 'vim-scripts/colorizer'
+Plug 'tpope/vim-repeat'
+Plug 'syntastic'
+Plug 'honza/vim-snippets'
+Plug 'Shougo/neocomplete.vim'
+Plug 'Shougo/neosnippet.vim'
+Plug 'Shougo/neosnippet-snippets'
+Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'tpope/vim-commentary'
+Plug 'justinmk/vim-syntax-extra'
 
 "initialise plugin system
 call plug#end()
+
+
+"****************************
+"------vim-neocomplete-------
+"****************************
+let g:neocomplete#enable_at_startup = 1
+let g:neocomplete#enable_auto_close_preview = 1
+let g:neocomplete#sources#syntax#min_keyword_length = 2
+let g:neocomplete#auto_completion_start_length = 2
+let g:neocomplete#enable_auto_select = 1
+let g:neosnippet#enable_snipmate_compatibility = 1
+
+
+"****************************
+"-------vim-syntastic--------
+"****************************
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 1
+let g:syntastic_loc_list_height = 3
