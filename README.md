@@ -228,8 +228,8 @@ To start once, immediately:
 
 * To install Vim plugins:
 
-      :source ~/arch-dotfiles/.vimrc
-      :PlugInstall
+        :source ~/arch-dotfiles/.vimrc
+        :PlugInstall
 
 **Cheatsheets**
 
