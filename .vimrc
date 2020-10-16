@@ -102,6 +102,9 @@ endif
 
 "begin plugins section
 call plug#begin('~/arch-dotfiles/.vim/plugged')
+Plug 'preservim/nerdtree' |
+  \ Plug 'Xuyuanp/nerdtree-git-plugin' |
+  \ Plug 'jistr/vim-nerdtree-tabs'
 Plug 'vim-vdebug/vdebug'
 Plug 'edkolev/promptline.vim'
 Plug 'hail2u/vim-css3-syntax'
@@ -125,6 +128,7 @@ Plug 'bling/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-commentary'
 Plug 'justinmk/vim-syntax-extra'
+Plug 'ehamberg/vim-cute-python'
 
 "initialise plugin system
 call plug#end()
