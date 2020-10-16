@@ -128,6 +128,7 @@ Plug 'bling/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-commentary'
 Plug 'justinmk/vim-syntax-extra'
+Plug 'JamshedVesuna/vim-markdown-preview'
 Plug 'ehamberg/vim-cute-python'
 
 "initialise plugin system
