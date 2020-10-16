@@ -224,12 +224,12 @@ To start once, immediately:
 ![*Japanesque* colour palette](https://raw.githubusercontent.com/lysyi3m/macos-terminal-themes/master/screenshots/japanesque.png)
 
 ### Vim
-* [NERDTree](https://github.com/preservim/nerdtree)
-
-        sudo pacman -S vim-nerdtree
-        cp ~/arch-dotfiles/.vimrc ~/.vimrc
-
 * [vim-plug](https://github.com/junegunn/vim-plug/) - Manage Vim plugins
+
+* To install Vim plugins:
+
+      :source ~/arch-dotfiles/.vimrc
+      :PlugInstall
 
 **Cheatsheets**
 
