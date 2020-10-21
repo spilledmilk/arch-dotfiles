@@ -105,17 +105,17 @@ The zsh-syntax-highlighting default highlighters should now be active, as the `Z
 ## KDE Plasma Aesthetics & Settings
 
 ### Appearance
-* **Global Theme**: Dracula
-* **Plasma Style**: Dracula-kde
+* **Global Theme**: Dracula, Edna
+* **Plasma Style**: Dracula-kde, Rounded Dark, Moe-Dark
 * **Application Style**: MS Windows 9x
-* **Window Decorations**: Gently
-* **Colors**: Dracula
+* **Window Decorations**: Gently, Edna, Sweet-Dark
+* **Colors**: Dracula, Edna
     
     * Selection Background: #693f99
     * Link Text: #00ffb7
 
 * **Fonts**: Ubuntu 12pt, Roboto Mono Medium 12pt
-* **Icons**: Papirus-Dark
+* **Icons**: Papirus-Dark, BeautyLine
 * **Emoticons**: Onigiri
 * **Cursors**: Qogir Cursors - White
 
