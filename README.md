@@ -178,9 +178,8 @@ To start once, immediately:
 
 ### Printers
         
-        sudo systemctl enable org.cups.cupsd.socket
-        sudo systemctl enable org.cups.cupsd.service
-        sudo systemctl start org.cups.cupsd.service
+        sudo systemctl enable cups.service
+        sudo systemctl start cups.service
         sudo systemctl start avahi-daemon.service
 
 ---
