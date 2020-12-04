@@ -9,13 +9,19 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 	source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# Source theme
-source ~/builds/powerlevel10k/powerlevel10k.zsh-theme
+# Source p10k theme 
+#source ~/builds/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 # To update, run `git -C ~/powerlevel10k pull`, then restart Zsh;
 # do not source .zshrc.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Spaceship Theme
+# To install, get latest from AUR package
+# spaceship-prompt-git
+autoload -U promptinit; promptinit
+prompt spaceship
 
 #======================================================================================#
 #======================================================================================#
@@ -56,12 +62,15 @@ export EDITOR='vim'
 
 # Configure oh-my-zsh
 export ZSH="$HOME/.oh-my-zsh"
-ZSH_CUSTOM=$DOT/.zsh-custom
-# source $ZSH/themes/muse.zsh-theme
+export ZSH_CUSTOM="$DOT/.zsh-custom"
 plugins=(colored-man-pages history-substring-search pip python ssh-agent poetry)
 source $ZSH/oh-my-zsh.sh
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
 source $HOME/builds/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# ZSH Theme
+source $ZSH_CUSTOM/themes/spaceship.zsh-theme
+ZSH_THEME="spaceship"
 
 # Alias definitions
 if [ -f ~/.bash_aliases ]; then
