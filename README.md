@@ -181,7 +181,7 @@ To start once, immediately:
         sudo systemctl enable org.cups.cupsd.socket
         sudo systemctl enable org.cups.cupsd.service
         sudo systemctl start org.cups.cupsd.service
-        sudo systecmtl start avahi-daemon.service
+        sudo systemctl start avahi-daemon.service
 
 ---
 
