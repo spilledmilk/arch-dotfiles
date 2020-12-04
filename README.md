@@ -81,10 +81,11 @@ To use an Oh-my-zsh theme, comment out the following line in the .zshrc file:
 Then, to apply an Oh-my-zsh theme of your choosing, un-comment the following:
 
     source $ZSH/themes/muse.zsh-theme
+    ZSH_THEME="muse"
 
 You can find screenshots of the different themes and their respective names [here](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes).
 
-Change the `muse.zsh-theme` to the one of your choice.
+Change `muse` to the one of your choice.
 
 <br>
 
