@@ -63,7 +63,7 @@ export EDITOR='vim'
 # Configure oh-my-zsh
 export ZSH="$HOME/.oh-my-zsh"
 export ZSH_CUSTOM="$DOT/.zsh-custom"
-plugins=(colored-man-pages history-substring-search pip python ssh-agent poetry)
+plugins=(colored-man-pages history-substring-search pip python ssh-agent poetry zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
 source $HOME/builds/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
