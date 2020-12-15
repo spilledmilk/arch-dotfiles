@@ -66,7 +66,6 @@ export ZSH_CUSTOM="$DOT/.zsh-custom"
 plugins=(colored-man-pages history-substring-search pip python ssh-agent poetry zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
-source $HOME/builds/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # ZSH Theme
 source $ZSH_CUSTOM/themes/spaceship.zsh-theme
