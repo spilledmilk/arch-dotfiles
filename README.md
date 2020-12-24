@@ -124,6 +124,7 @@ Change `muse` to the one of your choice.
 * **Global Theme**: Dracula, Edna
 * **Plasma Style**: Dracula-kde, Rounded Dark, Moe-Dark
 * **Application Style**: MS Windows 9x
+* **GNOME/GTK Application Style**: trollwut-pink-dark
 * **Window Decorations**: Gently, Edna, Sweet-Dark
 * **Colors**: Dracula, Edna
     
@@ -133,11 +134,12 @@ Change `muse` to the one of your choice.
 * **Fonts**: Ubuntu 12pt, Roboto Mono Medium 12pt
 * **Icons**: Papirus-Dark, BeautyLine
 * **Emoticons**: Onigiri
-* **Cursors**: Qogir Cursors - White
+* **Cursors**: Sweet-cursors, Qogir Cursors - White
 
 ### Workspace
-* **Login Screen (SDDM)**: Dracula
+* **Login Screen (SDDM)**: Dracula, Sddm-wynn, Christmas-Blue-SDDM
 * **Splash Screen**: QuarksSplashDarker
+* **Task Switcher**: Thumbnail Grid
 
 ### Hardware
 * **Keyboard**: "Advanced" > "Configure keyboard options"
