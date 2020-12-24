@@ -124,7 +124,7 @@ Change `muse` to the one of your choice.
 * **Global Theme**: Dracula, Edna
 * **Plasma Style**: Dracula-kde, Rounded Dark, Moe-Dark
 * **Application Style**: MS Windows 9x
-* **GNOME/GTK Application Style**: trollwut-pink-dark
+* **GNOME/GTK Application Style**: trollwut-pink-daret
 * **Window Decorations**: Gently, Edna, Sweet-Dark
 * **Colors**: Dracula, Edna
     
@@ -139,7 +139,6 @@ Change `muse` to the one of your choice.
 ### Workspace
 * **Login Screen (SDDM)**: Dracula, Sddm-wynn, Christmas-Blue-SDDM
 * **Splash Screen**: QuarksSplashDarker
-* **Task Switcher**: Thumbnail Grid
 
 ### Hardware
 * **Keyboard**: "Advanced" > "Configure keyboard options"
@@ -166,7 +165,7 @@ Change `muse` to the one of your choice.
     * Task Switcher
 
         * Show selected window
-        * Large Icons
+        * Large Icons, Thumbnail Grid
         * Shortcuts - All windows: Ctrl+Tab (Forward), Ctrl+Shift+Tab (Reverse)
         * Shortcuts - Current application: Alt+\` (Forward), Alt+Shift+\` (Reverse)
 
