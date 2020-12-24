@@ -49,7 +49,7 @@ Directories:
 
 <br/>
 
-### Install Powerlevel10k theme
+### Powerlevel10k theme
 Check out the link to romkatv's repository to set things up, or follow the simplified version below. 
 
 1. Install the Meslo Nerd Font, either from the linked "Nerd Fonts" site or [here from romkatv's repository](https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k)
@@ -89,17 +89,32 @@ Change `muse` to the one of your choice.
 
 <br>
 
+### Spaceship theme
+
+1. The repository should already be included. If it is not working as intended, delete the repository at `$ZSH-CUSTOM/themes/spaceship-prompt` and then follow the instructions [on the official website](https://denysdovhan.com/spaceship-prompt/).
+
+2. Symlink the theme to the oh-my-zsh custom themes directory
+
+        ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme" 
+
+3. Set the theme in `.zshrc`
+
+    ZSH_THEME="spaceship"
+
+4. Source the `.zshrc` file for the theme to take effect
+
 ### Add zsh-syntax-highlighting
 
-1. Clone the repository in the `$HOME/builds` folder
+1. Clone the repository in the `$DOT/.zsh-custom/plugins` folder
 
-        git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+        git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
-2. The file that must be sourced from this repository is already included in this dotfile's .zshrc file. Simply source the .zshrc file to be done with this step.
 
-        source ~/arch-dotfiles/.zshrc
+2. Activate the plugin in the `.zshrc` file
 
-The zsh-syntax-highlighting default highlighters should now be active, as the `ZSH_HIGHLIGHT_HIGHLIGHTERS` array is already in the .zshrc file. If you want to customise it further, check out the link from the top of the README for details.
+        plugins=( [plugins...] zsh-syntax-highlighting)
+
+3. Restart zsh
 
 ---
 
