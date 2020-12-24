@@ -1,1 +1,1 @@
-/home/kimja/arch-dotfiles/.zsh-custom/themes/spaceship-prompt/spaceship.zsh-theme
+/home/jgkim/arch-dotfiles/.zsh-custom/themes/spaceship-prompt/spaceship.zsh-theme
