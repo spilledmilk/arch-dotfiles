@@ -1,0 +1,19 @@
+AUR Packages - Installed via RUA
+
+discord_arch_electron
+debtap
+pcloud-drive
+sublim-text-dev
+espanso
+all-repository-fonts
+youtube-dl-git
+spaceship-prompt-git
+doxygen-git
+sayonara-player
+nordvpn-bin
+iridium-rpm
+visual-studio-code-bin
+transset-df
+chruby
+ruby-install
+
