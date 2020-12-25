@@ -7,17 +7,28 @@
 	[
 		"A File Icon",
 		"Agila Theme",
-		"BetterFindBuffer",
 		"Color Highlighter",
 		"Emmet",
+		"FileDiffs",
+		"Gist",
 		"Git",
+		"GitGutter",
 		"jQuery",
+		"MarkdownEditing",
+		"MarkdownPreview",
+		"Modific",
 		"Package Control",
 		"Package Syncing",
+		"Python 3",
 		"SideBarEnhancements",
+		"SmartMarkdown",
 		"Smarty",
+		"SublimGit",
 		"SublimeCodeIntel",
 		"SublimeLinter",
-		"VIM Navigation"
+		"Theme - Cyanide",
+		"Theme - Tech49",
+		"VIM Navigation",
+		"WordCount"
 	]
 }
