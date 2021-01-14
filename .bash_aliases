@@ -68,6 +68,18 @@ alias sublime-pkg-std='cp ~/.config/sublime-text-3/Packages/User/Package\ Contro
 alias ytdl='youtube-dl --no-cache-dir --extract-audio --audio-format mp3' #youtube link
 alias ytdl-u='sudo -H pip install --upgrade youtube-dl'
 
+# Toggle Xcompmgr
+function xcm {
+  if pgrep xcompmgr &>/dev/null; then
+    echo "Turning xcompmgr OFF"
+    pkill xcompmgr &
+  else
+    echo "Turning xcompmgr ON"
+    xcompmgr -c -C -t-5 -l-5 -r4.2 -o.55 &
+  fi
+
+  exit 0
+}
 
 #####################################################################
 #=========================== Code tools ============================#
