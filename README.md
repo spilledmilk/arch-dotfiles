@@ -49,6 +49,19 @@ Directories:
 
 <br/>
 
+### Install RUA
+[RUA](https://github.com/gnzlbg/rua) is a build tool for Arch, AUR.
+
+1. Install Rust from the official website, [here](https://www.rust-lang.org/tools/install)
+
+2. Install RUA "the Rust way", as outlined in the repository:
+
+        RUSTUP_TOOLCHAIN=stable cargo install --force rua
+
+3. Use the `rua install` command to install the AUR packages listed in the `rua/packages.txt` file
+
+<br/>
+
 ### Powerlevel10k theme
 Check out the link to romkatv's repository to set things up, or follow the simplified version below. 
 
@@ -87,23 +100,24 @@ You can find screenshots of the different themes and their respective names [her
 
 Change `muse` to the one of your choice.
 
-<br>
+<br/>
 
 ### Spaceship theme
 
-1. The repository should already be included. If it is not working as intended, delete the repository at `$ZSH-CUSTOM/themes/spaceship-prompt` and then follow the instructions [on the official website](https://denysdovhan.com/spaceship-prompt/).
+1. If you want to install this theme a different way than I did, go to [the official website](https://denysdovhan.com/spaceship-prompt/) and follow the instructions there. Otherwise, read on!
 
-2. Symlink the theme to the oh-my-zsh custom themes directory
+2. Install the theme using [rua](https://github.com/gnzlbg/rua):
 
-        ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme" 
+        rua install spaceship-prompt 
 
-3. Set the theme in `.zshrc`
 
-    ZSH_THEME="spaceship"
+3. Source the `.zshrc` file for the theme to take effect
 
-4. Source the `.zshrc` file for the theme to take effect
+<br/>
 
 ### Add zsh-syntax-highlighting
+
+Note: Only follow the instructions below if this does not take effect. The repo should already be included in the dotfiles.
 
 1. Clone the repository in the `$DOT/.zsh-custom/plugins` folder
 
@@ -300,6 +314,11 @@ Many thanks to [theicfire](https://github.com/theicfire/vimsheet) for these chea
         cd [clone-directory]
         git pull
         makepkg -sic
+
+* Use RUA to install and update:
+
+        rua install [package-name-from-AUR]
+        rua upgrade
 
 ### To Check Out Later
 * [Spacemacs](https://www.spacemacs.org/doc/DOCUMENTATION.html)
