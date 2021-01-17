@@ -64,12 +64,12 @@ export EDITOR='vim'
 export ZSH="$HOME/.oh-my-zsh"
 export ZSH_CUSTOM="$DOT/.zsh-custom"
 plugins=(colored-man-pages history-substring-search pip python ssh-agent poetry zsh-syntax-highlighting)
-# source $ZSH/oh-my-zsh.sh
+#source $ZSH/oh-my-zsh.sh
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
 
 # ZSH Theme
-# source $ZSH_CUSTOM/themes/spaceship.zsh-theme
-# ZSH_THEME="spaceship"
+#source $ZSH_CUSTOM/themes/spaceship.zsh-theme
+#ZSH_THEME="spaceship"
 
 # Alias definitions
 if [ -f ~/.bash_aliases ]; then
