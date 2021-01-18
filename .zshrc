@@ -17,11 +17,7 @@ fi
 # do not source .zshrc.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# Spaceship Theme
-# To install, get latest from AUR package
-# spaceship-prompt-git
-autoload -U promptinit; promptinit
-prompt spaceship
+
 
 #======================================================================================#
 #======================================================================================#
@@ -64,12 +60,18 @@ export EDITOR='vim'
 export ZSH="$HOME/.oh-my-zsh"
 export ZSH_CUSTOM="$DOT/.zsh-custom"
 plugins=(colored-man-pages history-substring-search pip python ssh-agent poetry zsh-syntax-highlighting)
-#source $ZSH/oh-my-zsh.sh
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
+source $ZSH/oh-my-zsh.sh
 
 # ZSH Theme
 #source $ZSH_CUSTOM/themes/spaceship.zsh-theme
 #ZSH_THEME="spaceship"
+
+# Spaceship Theme
+# To install, get latest from AUR package
+# spaceship-prompt-git
+autoload -U promptinit; promptinit
+prompt spaceship
 
 # Alias definitions
 if [ -f ~/.bash_aliases ]; then
