@@ -1,0 +1,47 @@
+uMatrix browser extensions rules
+
+
+Permanent:
+
+https-strict: behind-the-scene false
+matrix-off: about-scheme true
+matrix-off: behind-the-scene true
+matrix-off: chrome-extension-scheme true
+matrix-off: chrome-scheme true
+matrix-off: moz-extension-scheme true
+matrix-off: opera-scheme true
+matrix-off: vivaldi-scheme true
+matrix-off: wyciwyg-scheme true
+noscript-spoof: * true
+referrer-spoof: * true
+referrer-spoof: behind-the-scene false
+* * * block
+* * css allow
+* * frame block
+* * image allow
+* 1st-party * allow
+* 1st-party frame allow
+
+
+Temporary:
+
+* * script allow
+* linkedin.com * block
+accounts.google.com ssl.gstatic.com xhr allow
+github.com assets-cdn.github.com css allow
+github.com assets-cdn.github.com image allow
+github.com assets-cdn.github.com script allow
+github.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com xhr allow
+github.com github-production-user-asset-6210df.s3.amazonaws.com xhr allow
+github.com raw.githubusercontent.com xhr allow
+github.com render.githubusercontent.com frame allow
+github.com render.githubusercontent.com script allow
+github.com render.githubusercontent.com xhr allow
+linkedin.com linkedin.com * allow
+linkedin.com static.licdn.com script allow
+linkedin.com static.licdn.com xhr allow
+youtube.com googlevideo.com media allow
+youtube.com googlevideo.com xhr allow
+youtube.com s.ytimg.com script allow
+youtube.com www.gstatic.com script allow
+youtube.com ytimg.com image allow
