@@ -135,18 +135,18 @@ Note: Only follow the instructions below if this does not take effect. The repo 
 ## KDE Plasma Aesthetics & Settings
 
 ### Appearance
-* **Global Theme**: Dracula, Edna
-* **Plasma Style**: Dracula-kde, Rounded Dark, Moe-Dark
+* **Global Theme**: Dracula, Edna, Moe, Orchis 
+* **Plasma Style**: Dracula-kde, Moe-Dark, Rounded-Dark
 * **Application Style**: MS Windows 9x
 * **GNOME/GTK Application Style**: trollwut-pink-daret
-* **Window Decorations**: Gently, Edna, Sweet-Dark
+* **Window Decorations**: Gently, Edna, Sweet-Dark, MoeDark
 * **Colors**: Dracula, Edna
     
     * Selection Background: #693f99
     * Link Text: #00ffb7
 
 * **Fonts**: Ubuntu 12pt, Roboto Mono Medium 12pt
-* **Icons**: Papirus-Dark, BeautyLine
+* **Icons**: candy-icons, BeautyLine, Papirus-Dark
 * **Emoticons**: Onigiri
 * **Cursors**: Sweet-cursors, Qogir Cursors - White
 
