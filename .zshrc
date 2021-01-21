@@ -59,7 +59,7 @@ export EDITOR='vim'
 # Configure oh-my-zsh
 export ZSH="$HOME/.oh-my-zsh"
 export ZSH_CUSTOM="$DOT/.zsh-custom"
-plugins=(colored-man-pages history-substring-search pip python ssh-agent poetry zsh-syntax-highlighting)
+plugins=(colored-man-pages history-substring-search pip python ssh-agent poetry zsh-z zsh-syntax-highlighting)
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
 source $ZSH/oh-my-zsh.sh
 
@@ -92,3 +92,7 @@ function rkey {
         echo "rkey takes one argument: rkey [user]@[host]"
     fi
 }
+
+# Ruby
+# rbenv
+eval "$(rbenv init -)"
