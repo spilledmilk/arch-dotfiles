@@ -233,11 +233,9 @@ To start once, immediately:
 * If you ever want to modify an existing theme, add the modified file (different name than the original) to the `.zsh-custom/themes` folder. Then source that `.zsh-theme` file in .zshrc to apply the theme.
 
 ### Sublime
-* Clone the repository in the `$HOME/builds` folder and install
+* Install using RUA
 
-        git clone https://aur.archlinux.org/sublime-text-dev.github
-        cd [clone directory]
-        makepkg -sic
+        rua install sublime-text-dev
 
 * Open up Sublime and install Package Control: `Tools` > `Install Package Control...`
 
@@ -248,6 +246,19 @@ To start once, immediately:
         sublime-pref-dts
 
 [Sublime Text Package Control package search page](https://packagecontrol.io/)
+
+### Visual Studio Code
+* Install using RUA
+
+        rua install visual-studio-code-bin
+
+* Install extensions from `vscode/extensions.txt`. This goes through each extension in the file and installs the extension.
+
+        cat vscode/extensions.txt | xargs -n 1 code --install-extension
+
+* To back-up extensions in the future, use the following command
+
+        code --list-extensions >> vscode/extensions.txt
 
 ### Terminal
 
