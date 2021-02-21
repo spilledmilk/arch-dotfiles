@@ -47,6 +47,11 @@ Directories:
     
         source ~/arch-dotfiles/.zshrc
 
+5. Run `install.sh` file to create symbolic link
+
+        chomod +x install.sh
+        ./install.sh
+
 <br/>
 
 ### Install RUA
@@ -135,12 +140,12 @@ Note: Only follow the instructions below if this does not take effect. The repo 
 ## KDE Plasma Aesthetics & Settings
 
 ### Appearance
-* **Global Theme**: Dracula, Edna, Moe, Orchis 
+* **Global Theme**: Dracula, Edna, Moe, Orchis-dark 
 * **Plasma Style**: Dracula-kde, Moe-Dark, Rounded-Dark
-* **Application Style**: MS Windows 9x
-* **GNOME/GTK Application Style**: trollwut-pink-daret
-* **Window Decorations**: Gently, Edna, Sweet-Dark, MoeDark
-* **Colors**: Dracula, Edna
+* **Application Style**: Breeze
+* **GNOME/GTK Application Style**: trollwut-pink-dark
+* **Window Decorations**: Sweet-Dark-Transparent
+* **Colors**: Dracula, Moe
     
     * Selection Background: #693f99
     * Link Text: #00ffb7
@@ -151,7 +156,7 @@ Note: Only follow the instructions below if this does not take effect. The repo 
 * **Cursors**: Sweet-cursors, Qogir Cursors - White
 
 ### Workspace
-* **Login Screen (SDDM)**: Dracula, Sddm-wynn, Christmas-Blue-SDDM
+* **Login Screen (SDDM)**: Dracula, NetLogin, Starcraft
 * **Splash Screen**: QuarksSplashDarker
 
 ### Hardware
@@ -273,23 +278,23 @@ Many thanks to [theicfire](https://github.com/theicfire/vimsheet) for these chea
 * [NordVPN - Arch Wiki](https://wiki.archlinux.org/index.php/NordVPN)
 
 ### Preferred Software
-| Type              | Program               |
-| :----------       | :-----------          |
-| Browser           | Firefox, Brave        |
-| Terminal          | Tilda, Konsole        |
-| Terminal Editor   | Vim                   |
-| File Manager      | Dolphin               |
-| Password Manager  | KeePassXC             |
-| Code Editor       | Sublime Text, VS Code |
-| Music Player      | Sayonara              |
-| Pixel Art         | Aseprite              |
-| Chat              | Element (Riot)        |
-| Cloud Storage     | pCloud                |
-| VPN Client        | NordVPN               |
-| File Protection   | NordLocker            |
-| Screenshot        | Spectacle             |
-| Converter: .deb   | debtap                |
-| YT Download       | youtube-dl-git        |
+| Type              | Program                  |
+| :----------       | :-----------             |
+| Browser           | Firefox, Brave           |
+| Terminal          | Tilda, Konsole           |
+| Terminal Editor   | Vim                      |
+| File Manager      | Dolphin                  |
+| Password Manager  | KeePassXC + keepassxc-cli|
+| Code Editor       | Sublime Text, VS Code    |
+| Music Player      | Sayonara                 |
+| Pixel Art         | Aseprite                 |
+| Chat              | Element, Discord, Signal |
+| Cloud Storage     | pCloud                   |
+| VPN Client        | NordVPN                  |
+| File Protection   | NordLocker               |
+| Screenshot        | Spectacle                |
+| Converter: .deb   | debtap                   |
+| YT Download       | youtube-dl-git           |
 
 [Official Arch Packages](https://www.archlinux.org/packages/)
 
