@@ -3,7 +3,7 @@ AUR Packages - Installed via RUA
 discord_arch_electron
 debtap
 pcloud-drive
-sublim-text-dev
+sublime-text-dev
 espanso
 all-repository-fonts
 youtube-dl-git

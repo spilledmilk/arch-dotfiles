@@ -1,0 +1,15 @@
+benbusby.earthbound-themes
+ChirtleLovesDolls.nebula-theme
+christian-kohler.path-intellisense
+cometeer.spacemacs
+dracula-theme.theme-dracula
+imjacobclark.vscode-lisp-formatter
+mechatroner.rainbow-csv
+mintchipleaf.fairyfloss
+ms-python.python
+ms-toolsai.jupyter
+nopjmp.fairyfloss
+PKief.material-icon-theme
+tinaciousdesign.theme-tinaciousdesign
+vscodevim.vim
+yzhang.markdown-all-in-one
