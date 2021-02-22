@@ -47,6 +47,7 @@ alias remove='sudo pacman -Rns'
 alias install='sudo pacman -S'
 alias update='sudo pacman -Syu'
 alias make='makepkg -sic'
+alias bt-reset='sudo rfkill block bluetooth && sleep 0.1 && sudo rfkill unblock bluetooth'
 
 # School
 alias uiscad='ssh jlund6@uisacad5.uis.edu'
