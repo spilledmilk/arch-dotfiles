@@ -1,6 +1,16 @@
 # .zshrc - Jane Kim
 # https://spilledmilk.github.io
 
+# PATH config
+export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/.poetry/bin:$PATH"
+export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="$PATH:/home/$USER/.local/bin"
+
+#======================================================================================#
+#======================================================================================#
+#======================================================================================#
+
 # Powerlevel10k Theme
 # Enable Powerlevel10k instant prompt. Should stay close to the top of .zshrc file.
 # Initialization code that my require console input (password prompts, [y/n]
@@ -17,7 +27,11 @@ fi
 # do not source .zshrc.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-
+# Spaceship Theme
+# To install, get latest from AUR package
+# spaceship-prompt-git
+autoload -U promptinit; promptinit
+prompt spaceship
 
 #======================================================================================#
 #======================================================================================#
@@ -25,6 +39,9 @@ fi
 
 # Define
 DOT=~/arch-dotfiles
+
+# Default editor
+export EDITOR='vim'
 
 # Show contents of directory after cd-ing into it
 chpwd() {
@@ -50,38 +67,33 @@ SAVEHIST=1000
 HISTFILE=~/.zsh_history
 HISTTIMEFORMAT="%h %d %H:%M:%S "
 
-# Source
+# Load aliases
 source $DOT/.bash_aliases
 
-# Default editor
-export EDITOR='vim'
-
-# Configure oh-my-zsh
-export ZSH="$HOME/.oh-my-zsh"
-export ZSH_CUSTOM="$DOT/.zsh-custom"
-plugins=(colored-man-pages history-substring-search pip python ssh-agent poetry zsh-z zsh-syntax-highlighting)
-ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
-source $ZSH/oh-my-zsh.sh
-
-# ZSH Theme
-#source $ZSH_CUSTOM/themes/spaceship.zsh-theme
-#ZSH_THEME="spaceship"
-
-# Spaceship Theme
-# To install, get latest from AUR package
-# spaceship-prompt-git
-autoload -U promptinit; promptinit
-prompt spaceship
-
-# Alias definitions
 if [ -f ~/.bash_aliases ]; then
 	. ~/.bash_aliases
 fi
+
+# Load secrets
+[[ -f "$DOT/.env_secrets" ]] && source "$DOT/.env_secrets"
 
 # Execute .bash_local
 if [ -f ~/.bash_local ]; then
 	. ~/.bash_local
 fi
+
+# Ruby
+# rbenv
+eval "$(rbenv init -)"
+
+# Configure OH-MY-ZSH
+export ZSH="$HOME/.oh-my-zsh"
+export ZSH_CUSTOM="$DOT/.zsh-custom"
+#source $ZSH_CUSTOM/themes/your_theme.zsh-theme
+#ZSH_THEME="your_theme"
+plugins=(colored-man-pages history-substring-search pip python ssh-agent poetry zsh-z zsh-syntax-highlighting)
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
+source $ZSH/oh-my-zsh.sh
 
 # Remotely add authorized ssh key
 function rkey {
@@ -92,7 +104,3 @@ function rkey {
         echo "rkey takes one argument: rkey [user]@[host]"
     fi
 }
-
-# Ruby
-# rbenv
-eval "$(rbenv init -)"
