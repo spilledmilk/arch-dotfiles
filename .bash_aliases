@@ -66,7 +66,7 @@ alias sublime-pref-std='cp ~/.config/sublime-text-3/Packages/User/Preferences.su
 alias sublime-pkg-std='cp ~/.config/sublime-text-3/Packages/User/Package\ Control.sublime-settings ~/arch-dotfiles/sublime/packages-list.txt'
 
 # Youtube DL
-alias ytdl='youtube-dl --no-cache-dir --extract-audio --audio-format mp3' #youtube link
+alias ytdl='youtube-dl --no-cache-dir -i --extract-audio --audio-format mp3' #youtube link
 alias ytdl-u='sudo -H pip install --upgrade youtube-dl'
 
 # Toggle Xcompmgr
