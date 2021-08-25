@@ -11,22 +11,6 @@ export PATH="$PATH:/home/$USER/.local/bin"
 #======================================================================================#
 #======================================================================================#
 
-# Powerlevel10k Theme
-# Enable Powerlevel10k instant prompt. Should stay close to the top of .zshrc file.
-# Initialization code that my require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-	source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
-# Source p10k theme 
-#source ~/builds/powerlevel10k/powerlevel10k.zsh-theme
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-# To update, run `git -C ~/powerlevel10k pull`, then restart Zsh;
-# do not source .zshrc.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
 # Spaceship Theme
 # To install, get latest from AUR package
 # spaceship-prompt-git
@@ -37,7 +21,12 @@ prompt spaceship
 #======================================================================================#
 #======================================================================================#
 
-# Define
+# Source stuff
+if [[ -f /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]]; then
+	. /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+fi
+
+# Define stuff
 DOT=~/arch-dotfiles
 
 # Default editor
@@ -49,16 +38,18 @@ chpwd() {
 }
 
 # Enable completion
-autoload -U compinit
+autoload -Uz compinit promptinit
 compinit -i
+promptinit
 zstyle ':completion:*' menu select
 setopt menu_complete
+setopt COMPLETE_ALIASES
 
 # Enable colours
 autoload -U colors && colors
 setopt prompt_subst
 
-# History
+# History stuff
 setopt APPEND_HISTORY
 setopt HIST_IGNORE_DUPS
 setopt HIST_IGNORE_SPACE
@@ -66,6 +57,10 @@ HISTSIZE=1000
 SAVEHIST=1000
 HISTFILE=~/.zsh_history
 HISTTIMEFORMAT="%h %d %H:%M:%S "
+
+# Variables
+export BROWSER="firefox"
+export EDITOR="/usr/bin/vim"
 
 # Load aliases
 source $DOT/.bash_aliases
@@ -84,16 +79,7 @@ fi
 
 # Ruby
 # rbenv
-eval "$(rbenv init -)"
-
-# Configure OH-MY-ZSH
-export ZSH="$HOME/.oh-my-zsh"
-export ZSH_CUSTOM="$DOT/.zsh-custom"
-#source $ZSH_CUSTOM/themes/your_theme.zsh-theme
-#ZSH_THEME="your_theme"
-plugins=(colored-man-pages history-substring-search pip python ssh-agent poetry zsh-z zsh-syntax-highlighting)
-ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
-source $ZSH/oh-my-zsh.sh
+#eval "$(rbenv init -)"
 
 # Remotely add authorized ssh key
 function rkey {
