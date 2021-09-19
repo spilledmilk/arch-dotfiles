@@ -1,0 +1,5 @@
+File > Settings > Plugins
+
+Atom Materials Icons
+Hiberbee Theme
+Cypress Support

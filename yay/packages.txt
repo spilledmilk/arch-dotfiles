@@ -1,9 +1,9 @@
-AUR Packages - Installed via RUA
+AUR Packages - Installed via yay
 
 discord_arch_electron
 debtap
 pcloud-drive
-sublime-text-dev
+sublime-text
 espanso
 all-repository-fonts
 youtube-dl-git
@@ -11,9 +11,6 @@ spaceship-prompt-git
 doxygen-git
 sayonara-player
 nordvpn-bin
-iridium-rpm
 visual-studio-code-bin
 transset-df
-chruby
-ruby-install
 

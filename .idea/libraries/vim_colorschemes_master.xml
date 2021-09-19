@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="vim-colorschemes-master">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/.vim/vim-colorschemes-master.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
