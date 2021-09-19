@@ -8,3 +8,4 @@ doc
 coverage
 public/assets
 *.sql
+.idea/*
