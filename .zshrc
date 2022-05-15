@@ -62,6 +62,11 @@ HISTTIMEFORMAT="%h %d %H:%M:%S "
 export BROWSER="firefox"
 export EDITOR="/usr/bin/vim"
 
+# Load any environment variables
+if [ -f ~/.env_variables ]; then
+	source ~/.env_variables
+fi
+
 # Load aliases
 source $DOT/.bash_aliases
 
@@ -79,7 +84,10 @@ fi
 
 # Ruby
 # rbenv
-#eval "$(rbenv init -)"
+eval "$(rbenv init -)"
+
+# nvm
+source /usr/share/nvm/init-nvm.sh
 
 # Remotely add authorized ssh key
 function rkey {
@@ -90,3 +98,5 @@ function rkey {
         echo "rkey takes one argument: rkey [user]@[host]"
     fi
 }
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"

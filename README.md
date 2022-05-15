@@ -4,7 +4,7 @@
 
 Greetings!
 
-This is my Arch Linux and Oh-my-zsh setup, using KDE Plasma.
+This is my Arch Linux and zsh setup, using KDE Plasma.
 
 Check out these resources:
 
@@ -82,42 +82,79 @@ Directories:
 
 ---
 
-## KDE Plasma Aesthetics & Settings
+## KDE Plasma Aesthetics Options & Settings
 
-### Appearance
-* **Global Theme**: Matcha-sea, cherry 
-* **Plasma Style**: cherry
-* **Application Style**: Breeze
-* **GNOME/GTK Application Style**: Trollwut (Pink, Orange)
-* **Window Decorations**: Matcha-sea
-* **Colors**: MatchaSeaDark
+<details>
+    <summary><b>Appearance</b></summary>
 
+    Global Theme:
+        - Matcha-sea
+        - cherry
+        - Catpuccin
+        - Iridescent-round
+        - Lace
+    Plasma Style: 
+        - cherry
+        - Lace
+        - Matcha-sea
+    Application Style: 
+        - Breeze
+    GNOME/GTK Application Style: 
+        - Trollwut (Pink, Orange)
+    Window Decorations: 
+        - Matcha-sea
+        - cherry
+        - Jolly-Blur-Aurorae
+        - Lace
+    Colors: 
+        - MatchaSeaDark
+        - Catppuccin
 
-* **Fonts**: Cantarell, Source Code Pro Medium
-* **Icons**: candy-icons, Flatery-Dark
-* **Emoticons**: Onigiri
-* **Cursors**: Bibata-Modern-Amber
-* **Splash Screen**: QuarksSplashDark
+    Fonts: 
+        - Ubuntu 
+        - Source Code Pro
+    Icons:
+        - candy-icons
+        - Flatery-Dark
+        - Planet Dream
+        - oomox-Catppuccin_Dark
+        - Solarized-Dark-Voilet
+    Emoticons: 
+        - Onigiri
+    Cursors:
+        - Bibata-Modern-*
+    Splash Screen:
+        - QuarksSplashDark
+        - Lace
+</details>
 
-### Workspace
-* **Login Screen (SDDM)**: Slice
+<details>
+    <summary><b>Workspace</b></summary>
 
-### Hardware
-* **Keyboard**: "Advanced" > "Configure keyboard options"
+    Login Screen (SDDM):
+        - Slice
+</details>
 
-    * Caps Lock behavior => Make Caps Lock an additional Esc
-    * Ctrl position => Swap Left Alt with Left Ctrl
+<details>
+    <summary><b>Hardware</b></summary>
 
-### Window Management
-* **Task Switcher**: Large icons
-* **Behavior**:
+    Keyboard: "Advanced" > "Configure keyboard options"
+        - Caps Lock behavior => Make Caps Lock an additional Esc
+        - Ctrl position => Swap Left Alt with Left Ctrl
+</details>
 
-    * Group: By program name, Combine into single button
-    * Sort: Alphabetically
-    * On middle-click: None
-    * Show only tasks: From current desktop, From current activity
-    * Mark applications that play audio
-    * Maximum rows: 1
+<details>
+    <summary><b>Window Management</b></summary>
+    Task Switcher:
+        - Large icons
+    Behavior:
+        - Group: By program name, Combine into single button
+        - Sort: Alphabetically
+        - On middle-click: None
+        - Show only tasks: From current desktop, From current activity
+        - Mark applications that play audio
+        - Maximum rows: 1
+</details>
 
 ---
 
@@ -153,84 +190,92 @@ To start once, immediately:
 
 ## Other Useful Notes
 
-### Git: Generating SSH Keys
-* After following [Github's guide](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent), copy the key from the `.id_rsa.pub` file.
+<details>
+    <summary><b>Git</b></summary>
+    
+    Generating SSH Keys
+        1. Follow [Github's guide](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+        2. Copy the key from the `.id_rsa.pub` file.
+</details>
+
+<details>
+    <summary><b>Aliases</b></summary>
+
+    Obviously, some of the aliases in the `.bash_aliases` file will not be useful to you. Delete and keep what you'd like -- make it your own :)
+</details>
+
+<details>
+    <summary><b>Code Editors & IDEs</b></summary>
+    
+    Jetbrains
+        - See `settings/jetbrains/` directory for packages for Jetbrains products.
+
+    Sublime
+        - Sublime Text Package Control package search page: https://packagecontrol.io/
+
+        - Install using yay
+            yay -S sublime-text-dev
+
+        - Open up Sublime and install Package Control: `Tools` > `Install Package Control...`
+        - Install packages listed in the `settings/sublime/packages-list.txt` file
+        - Copy `Preferences.sublime-settings` content into the Sublime User file with the same name (alias shown below)
+            sublime-pref-dts
+
+    Visual Studio Code
+        - Install using yay
+            yay -S visual-studio-code-bin
+
+        - Install extensions from `settings/vscode/extensions.txt`. This goes through each extension in the file and installs the extension.
+            cat vscode/extensions.txt | xargs -n 1 code --install-extension
+
+        - To back-up extensions in the future, use the following command
+            code --list-extensions >> vscode/extensions.txt
+</details>
+
+<details>
+    <summary><b>Terminal</b></summary>
+
+    Notes: 
+        - You may need to configure your terminal preferences to run `source ~/arch-dotfiles/.zshrc` when the application starts.
+
+        - [Yakuake](/https://apps.kde.org/yakuake/) - Terminal emulator, `cherry` theme
+        - [Colour palette ideas](https://github.com/lysyi3m/macos-terminal-themes)
+
+    Vim
+        - vim-plug: https://github.com/junegunn/vim-plug/ (manage Vim plugins)
+        - To install Vim plugins:
+            :source ~/arch-dotfiles/.vimrc
+            :PlugInstall
+
+    Cheatsheets
+        - Many thanks to theicfire (https://github.com/theicfire/vimsheet) for these cheatsheets.
+            - General: https://github.com/theicfire/vimsheet/blob/gh-pages/index.md
+            - Advanced: https://github.com/theicfire/vimsheet/blob/gh-pages/advanced.md
+</details>
+
+<details>
+    <summary><b>Privacy & Security</b></summary>
+        - Restore Privacy: https://restoreprivacy.com/
+        - Firefox privacy modification guide: https://restoreprivacy.com/firefox-privacy/
+        - NordVPN - Arch Wiki: https://wiki.archlinux.org/index.php/NordVPN
+</details>
 
 
-### Aliases
-* Obviously, some of the aliases in my `.bash_aliases` file will not be useful to you. Delete and keep what you'd like -- make it your own :)
+---
 
-### Jetbrains
-* See `settings/jetbrains/` directory for packages for Jetbrains products. This requires a paid subscription.
 
-### Sublime
-[Sublime Text Package Control package search page](https://packagecontrol.io/)
-
-* Install using yay
-
-        yay -S sublime-text-dev
-
-* Open up Sublime and install Package Control: `Tools` > `Install Package Control...`
-
-* Install packages listed in the `settings/sublime/packages-list.txt` file
-
-* Copy `Preferences.sublime-settings` content into the Sublime User file with the same name (alias shown below)
-
-        sublime-pref-dts
-
-### Visual Studio Code
-* Install using yay
-
-        yay -S visual-studio-code-bin
-
-* Install extensions from `settings/vscode/extensions.txt`. This goes through each extension in the file and installs the extension.
-
-        cat vscode/extensions.txt | xargs -n 1 code --install-extension
-
-* To back-up extensions in the future, use the following command
-
-        code --list-extensions >> vscode/extensions.txt
-
-### Terminal
-
-**Note:** You may need to configure your terminal preferences to run `source ~/arch-dotfiles/.zshrc` when the application starts.*
-
-* [Yakuake](/https://apps.kde.org/yakuake/) - Terminal emulator, `cherry` theme
-* [Colour palette ideas](https://github.com/lysyi3m/macos-terminal-themes)
-
-![*Japanesque* colour palette](https://raw.githubusercontent.com/lysyi3m/macos-terminal-themes/master/screenshots/japanesque.png)
-
-### Vim
-* [vim-plug](https://github.com/junegunn/vim-plug/) - Manage Vim plugins
-
-* To install Vim plugins:
-
-        :source ~/arch-dotfiles/.vimrc
-        :PlugInstall
-
-**Cheatsheets**
-
-Many thanks to [theicfire](https://github.com/theicfire/vimsheet) for these cheatsheets.
-* [General](https://github.com/theicfire/vimsheet/blob/gh-pages/index.md)
-* [Advanced](https://github.com/theicfire/vimsheet/blob/gh-pages/advanced.md)
-
-### Privacy & Security
-* [Restore Privacy](https://restoreprivacy.com/)
-* [Firefox privacy modification guide](https://restoreprivacy.com/firefox-privacy/)
-* [NordVPN - Arch Wiki](https://wiki.archlinux.org/index.php/NordVPN)
-
-### Preferred Software
+## Preferred Software
 | Type              | Program                  |
 | :----------       | :-----------             |
 | Browser           | Firefox, Brave           |
 | Terminal          | Yakuake                  |
 | Terminal Editor   | Vim                      |
 | File Manager      | Dolphin                  |
-| Password Manager  | KeePassXC + keepassxc-cli|
+| Password Manager  | KeePassXC, NordPass      |
 | Code Editor       | Jetbrains                |
 | Music Player      | Sayonara                 |
 | Pixel Art         | Aseprite                 |
-| Chat              | Element, Discord, Signal |
+| Chat              | Discord, Signal          |
 | Cloud Storage     | pCloud                   |
 | VPN Client        | NordVPN                  |
 | Screenshot        | Spectacle                |
@@ -239,29 +284,29 @@ Many thanks to [theicfire](https://github.com/theicfire/vimsheet) for these chea
 
 [Official Arch Packages](https://www.archlinux.org/packages/)
 
-* To install:
+  **To install**:
 
         sudo pacman -S [package_name]
 
-* Updates when updating the system:
+ **Updates when updating the system**:
 
         sudo pacman -Syu
 
 [Arch User Repository](https://aur.archlinux.org/packages/)
 
-* To install:
+ **To install**:
 
         git clone [git-clone-url]
         cd [clone-directory]
         makepkg -sic
 
-* To update:
+ **To update**:
         
         cd [clone-directory]
         git pull
         makepkg -sic
 
-* Use yay to install and update:
+ **Use _yay_ to install and update**:
 
         yay -S [package-name-from-AUR]
         yay
