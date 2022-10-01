@@ -14,8 +14,7 @@ export PATH="$PATH:/home/$USER/.local/bin"
 # Spaceship Theme
 # To install, get latest from AUR package
 # spaceship-prompt-git
-autoload -U promptinit; promptinit
-prompt spaceship
+source /usr/lib/spaceship-prompt/spaceship.zsh
 
 #======================================================================================#
 #======================================================================================#
